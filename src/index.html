@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
 </head>
-<body>
-  <nav class="flex bg-navColor justify-around items-center p-10">
+<body class="h-[200vh]">
+    <nav class="flex bg-navColor justify-around items-center p-10 fixed left-0 right-0 z-50">
         <div>
             <svg class="w-[355px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409.53559 51.6816">
                 <defs>
@@ -49,13 +49,54 @@
                 <li class="cursor-pointer">Explore</li>
             </ul>
         </div>
-        <div class="flex relative">
-            <input class="bg-transparent border-b-2 border-black w-28 placeholder:text-black" type="text" placeholder="search">
+        <div class="flex relative w-28 border-b border-black">
+            <input class="w-[88px] bg-transparent placeholder:text-black focus:outline-none" type="text" placeholder="Search">
             <svg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 absolute right-0">
                 <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-              </svg>
-              
+            </svg> 
         </div>
-  </nav>
+    </nav>
+    <main>
+        <div class="bg-[url('/img/heroImg.webp')] h-screen bg-cover bg-center relative -z-50">
+            <div>
+                <button class="heroBtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+                </button>
+                <button class="heroBtn right-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="flex flex-col  z-50  text-black absolute top-[390px] left-28 gap-5 p-9 w-[450px] backdrop-blur-lg bg-gray-800/50">
+                <p class="z-20 text-white font-bold text-2xl">A University committed to gender equality</p>
+                <p class="text-white leading-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam, similique quia provident ea perferendis animi quisquam modi fuga aperiam.</p>
+                <button class="bg-btnColor font-bold w-fit px-2 cursor-pointer">See More</button>
+            </div>
+        </div>
+
+        <div class="p-20">
+            <div class="flex flex-wrap gap-12 justify-start pb-10 border-b border-gray-300 md:flex-nowrap md:justify-center">
+                <div class="bg-blue-400 flex flex-col gap-8 justify-between">
+                    <h2 class=" text-5xl text-btnColor">
+                        Study
+                    </h2>
+                    <span class="text-3xl font-bold">Your future is here!</span>
+                </div>
+                <div class="self-end">
+                    <p class="font-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis ullam, cumque suscipit, voluptatibus placeat officiis ab esse mollitia architecto officia dolores facere accusamus atque voluptatem?</p>
+                </div>
+            </div>
+
+            <div>
+                <span>Which coursre are you looking for?</span>
+            </div>
+            
+        </div>
+    </main>
+
 </body>
 </html>
